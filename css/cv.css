@@ -1,0 +1,177 @@
+body{
+width: 100%; /* The code is for the width of the body file*/
+}
+header{
+  width: 100%;
+  background-color: black ;
+  color: white;
+  display: flex;
+
+}
+/* The above code changes the color of the background and the flex propery makes the items in the header to be in same row and color justifies the color of text.*/
+.logo{
+  width: 100px;
+  margin-left: 0px;
+}
+/* The above code justifies the width of the logo  and the margin provided to the logo.*/
+.logo img{
+  height: 120px;
+  border-radius: 50%;
+  transition: width 2s,height 4s,transform 2s;
+  }
+  /* the above codes changes height to the logo image,gives circular scene of the image and g the image changes it shape and size for certain duration*/
+  .logo img:hover{
+    transform: rotate(360deg);
+  }
+  /* the above code rotates the image 360 degrees when the curser is made to point on the image.*/
+
+.main{
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+  margin-top: 1%;
+  margin-left: 20%;
+}
+/* The above codes justifies the font family.font size and provides necessary margin to the text*/
+nav{
+
+  background: silver;
+  overflow: hidden;
+  font-family: sans-serif;
+
+}
+/* the above codes changes the background color , font family of the navigation bar .*/
+nav ul{
+  display: flex;
+  list-style-type: none;
+  margin-left:0;
+  padding-left: 0;
+}
+/* the aboves codes makes the navigation bar items display in the form of row  ,  and no bullets are shown on the pages.*/
+nav li{
+  flex:1;
+}
+/* the above code frovides equal spaces between the text in the navigation bar */
+nav a{
+  text-decoration: none;
+  padding:10px;
+  text-align: center;
+  display:block;
+  }
+  /* the above codes provides no decoration to the text(i.e removes the underline),displays the text in centre and provides equal spaces between the text in the form of blocks.*/
+nav a:hover{
+  background:white;
+}
+/* the above code gives the background when cursor is to point on the text*/
+.section{
+  overflow: hidden;
+}
+/* the above code hides the unwanted black spaces in the web page.  */
+.section1{
+  display: flex;
+  flex-direction: row;
+}
+/* the above code displays the contents of this div in row */
+.edu{
+  width:50%;
+  text-align: justify;
+  padding-left: 10px;
+  background-color: black;
+  color: silver;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+/* the above code provides the given width,changes the background color,changes the color of text,displays the text in systematic form and provides the given padding.  */
+
+.exp{
+  width:50%;
+  padding-left: 10px;
+  background-color: silver;
+  color: black;
+  border-top: 1px solid black;
+  text-align: justify;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* the above code provides the given width,changes the background color,changes the color of text,displays the text in systematic form and provides the given paddingand also border is displayed  */
+
+.section2{
+  display: flex;
+  flex-direction: row;
+}
+/* the above code displays the contents of this div in row */
+
+
+.ski{
+  width:50%;
+  padding-left: 10px;
+  background-color: silver;
+  color: black;
+  text-align: justify;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+/* the above code provides the given width,changes the background color,changes the color of text,displays the text in systematic form and provides the given padding.  */
+
+
+.rev{
+  width:50%;
+  padding-left: 10px;
+  background-color: black;
+  color: silver;
+  text-align: justify;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border-bottom: 1px solid silver;
+}
+/* the above code provides the given width,changes the background color,changes the color of text,displays the text in systematic form and provides the given paddingand also border is displayed  */
+
+
+
+footer{
+  width: 100%;
+  background:black;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  }
+  /* the above codes provides required width,changes the background color and color of the texts,displays the items in row and provides equal spaces between them */
+.copyright{
+  padding-left: 10px;
+  margin-top: 20px;
+}
+/* the above codes provides required padding and margin to the texts.*/
+.call{
+  margin-top: 60px;
+}
+/* the above codes provides required  margin to the text.*/
+
+.follow{
+  text-align: center;
+}
+/* the above codes dispalys the text in centre.*/
+.follow img{
+  margin-right: 10px;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  transition: width 2s,height 4s,transform 2s;
+}
+/* the above codes provides required margin. changes height and width of the image,gives circular scene of the image and  the image changes it shape and size for certain duration*/
+
+.follow img:hover{
+  transform: rotate(360deg);
+}
+/* the above code rotates the image 360 degrees when the curser is made to point on the image.*/
+
+@media all and (max-width:1000px) {
+  nav ul{
+    flex-direction: column;
+  }
+  /* the code makes the navigation bar responsive.*/
+}
+/* the code makes the web page responsive.
